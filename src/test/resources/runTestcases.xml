@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Cathay Bank Web Project" parallel="false">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Run test scripts on Chrome">
+		<parameter name="browser" value="Chrome" />	
+	
+		<parameter name="url" value="https://www.cathaybk.com.tw/mybank/" />
+		<parameter name="version" value="99.0" />
+		<classes>
+			<class
+				name="web.testscript.TestScriptForWeb" />
+		</classes>
+	</test>
+
+</suite> 
