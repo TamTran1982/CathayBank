@@ -2,8 +2,8 @@ package web.interfaces;
 
 public class LoginPageUI {	
 	public static final String TITLE_POPUP = "//div[@id='divSystemLoginMsgList']//h5[contains(text(), '系統維護公告')]";
-	public static final String I_KNOW_BTN_CHI = "//div[@id='divSystemLoginMsgList']//button[contains(text(), '我知道了')]";
-	public static final String I_KNOW_BTN_ENG = "//div[@id='divSystemLoginMsgList']//button[contains(text(), 'I know')]";
+	public static final String I_KNOW_BTN_CHI = "//div[@id='divSystemLoginMsg']//button[contains(text(), '我知道了')]";
+	public static final String I_KNOW_BTN_ENG = "//div[@id='divSystemLoginMsg']//button[contains(text(), 'I know')]";
 	
 	public static final String LANGUAGE_EN_BTN = "//span[contains(text(), 'EN')]";
 	public static final String ID_NUMBER_TXT = "//input[@name='CustID']";

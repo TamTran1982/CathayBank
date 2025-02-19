@@ -1,6 +1,7 @@
 package web.testscript;
 
 import commons.AbstractTest;
+import web.interfaces.LoginPageUI;
 import web.pages.LoginPagePO;
 import web.pages.OnlineBankingPagePO;
 import web.pages.PageFactoryManager;
@@ -22,13 +23,13 @@ public class TestScriptForWeb extends AbstractTest {
 		driver = openMultiBrowser(browser, url, version);
 		loginPage = PageFactoryManager.getLoginPage(driver);
 		
-		if(verifyTrue(loginPage.checkTitlePopup())) {
-			loginPage.clickToIKnowChiButton();		
-			loginPage.clickToLanguageENButton();
-			loginPage.clickToIKnowEngButton();	
-		}else {
-			loginPage.clickToLanguageENButton();
-		}
+//		if(loginPage.checkTitlePopup()) {			
+//			loginPage.clickToIKnowChiButton();		
+//			loginPage.clickToLanguageENButton();
+//			loginPage.clickToIKnowEngButton();			
+//		}else {			
+			loginPage.clickToLanguageENButton();		
+//		}
 		
 	}
 

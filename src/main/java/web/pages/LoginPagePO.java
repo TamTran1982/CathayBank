@@ -25,9 +25,10 @@ public class LoginPagePO extends AbstractPage {
 	}
 
 	public boolean checkTitlePopup() {
-		waitForControlClickable(driver, LoginPageUI.TITLE_POPUP);
-		return isControlDisplayed(driver, LoginPageUI.TITLE_POPUP);
+		waitForControlClickable(driver, LoginPageUI.I_KNOW_BTN_CHI);
+		return isControlDisplayed(driver, LoginPageUI.I_KNOW_BTN_CHI);
 	}
+	
 	public void clickToIKnowChiButton() {
 		waitForControlClickable(driver, LoginPageUI.I_KNOW_BTN_CHI);
 		clickToElementByJS(driver, LoginPageUI.I_KNOW_BTN_CHI);
